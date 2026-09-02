@@ -1,0 +1,187 @@
+﻿stage,dataset,record_id,column_name,issue_type,issue_description,action_taken
+2. Combine & Deduplicate,orders,ORD000056,order_id,DUPLICATE_KEY,Duplicate order_id found (2 occurrences). Kept latest record.,DEDUPLICATED (keep=last)
+2. Combine & Deduplicate,orders,ORD000416,order_id,DUPLICATE_KEY,Duplicate order_id found (2 occurrences). Kept latest record.,DEDUPLICATED (keep=last)
+3. Clean Customers,customers,C0029,email,MISSING_EMAIL,Customer email address is missing/null.,SET_NULL
+3. Clean Customers,customers,C0058,email,MISSING_EMAIL,Customer email address is missing/null.,SET_NULL
+3. Clean Customers,customers,C0087,email,MISSING_EMAIL,Customer email address is missing/null.,SET_NULL
+3. Clean Customers,customers,C0116,email,MISSING_EMAIL,Customer email address is missing/null.,SET_NULL
+3. Clean Customers,customers,C0145,email,MISSING_EMAIL,Customer email address is missing/null.,SET_NULL
+3. Clean Customers,customers,C0002,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0007,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0009,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0010,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ชลบุรี ',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0011,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0012,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0013,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0014,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0016,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0019,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0022,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0025,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ชลบุรี ',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0027,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0028,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0030,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ชลบุรี ',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0031,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0034,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0035,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0036,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0041,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0042,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0045,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0047,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0048,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0049,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0050,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0051,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0054,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0056,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0057,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0059,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0060,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0061,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0063,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0068,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0073,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0075,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0076,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0077,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0078,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0084,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0085,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0086,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0091,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ชลบุรี ',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0092,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0093,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0097,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0099,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0106,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0108,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0109,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0110,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0111,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0113,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0114,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0115,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0116,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0117,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ชลบุรี ',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0118,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0123,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Rayong',STANDARDIZED to 'ระยอง'
+3. Clean Customers,customers,C0125,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0128,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0129,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0132,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0134,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0137,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0138,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0141,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0142,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0145,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0146,province,NON_STANDARD_PROVINCE,Non-standard province name: 'กทม.',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0147,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0148,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0149,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0150,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0151,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0152,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chonburi',STANDARDIZED to 'ชลบุรี'
+3. Clean Customers,customers,C0153,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0155,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0159,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Phuket',STANDARDIZED to 'ภูเก็ต'
+3. Clean Customers,customers,C0160,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Bangkok',STANDARDIZED to 'กรุงเทพมหานคร'
+3. Clean Customers,customers,C0012,province,NON_STANDARD_PROVINCE,Non-standard province name: 'ขอนเเก่น',STANDARDIZED to 'ขอนแก่น'
+3. Clean Customers,customers,C0045,province,NON_STANDARD_PROVINCE,Non-standard province name: 'Chiang Mai',STANDARDIZED to 'เชียงใหม่'
+3. Clean Customers,customers,C0012,customer_id,DUPLICATE_KEY,Duplicate customer_id 'C0012' in CRM.,DEDUPLICATED (keep=last)
+3. Clean Customers,customers,C0045,customer_id,DUPLICATE_KEY,Duplicate customer_id 'C0045' in CRM.,DEDUPLICATED (keep=last)
+3. Clean Customers,customers,C0088,customer_id,DUPLICATE_KEY,Duplicate customer_id 'C0088' in CRM.,DEDUPLICATED (keep=last)
+3. Clean Payments,payments,ORD000101,order_id,DUPLICATE_KEY,Duplicate payment record for order_id 'ORD000101'.,DEDUPLICATED (keep=last)
+4. Validate Business Rules,orders,ORD000008,quantity,INVALID_QUANTITY,Quantity <= 0 (value: -1),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000009,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0162' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000022,product_id,UNMATCHED_PRODUCT_ID,product_id 'P999' not found in Product Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000023,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000029,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0161' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000033,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0164' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000033,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,orders,ORD000044,unit_price,INVALID_UNIT_PRICE,Unit price is null or <= 0 (value: nan),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000066,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0162' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000076,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0163' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000093,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000101,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000106,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000112,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000121,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000130,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000142,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000144,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0165' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000148,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000167,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000179,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000186,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000189,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0165' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000199,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0161' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000205,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000217,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000256,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000262,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000266,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000267,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0164' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000276,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0163' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000285,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000294,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000310,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000313,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000314,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000322,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000326,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000347,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000367,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0161' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,orders,ORD000368,quantity,INVALID_QUANTITY,Quantity <= 0 (value: -1),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000368,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000382,product_id,UNMATCHED_PRODUCT_ID,product_id 'P999' not found in Product Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000383,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000386,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000393,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000396,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000399,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,orders,ORD000404,unit_price,INVALID_UNIT_PRICE,Unit price is null or <= 0 (value: nan),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000410,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0162' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000417,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000427,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000430,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000436,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000438,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000455,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000457,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0164' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000458,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000459,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000464,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0161' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000468,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000486,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000488,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000491,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000497,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000500,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000509,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0162' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000527,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000532,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000549,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000550,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0164' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000553,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000572,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0163' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000573,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000595,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000599,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000607,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000614,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0163' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000621,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000631,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000654,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000659,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0165' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000661,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0161' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000667,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0162' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000681,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000700,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000701,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000705,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000714,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000727,payment_status,PAYMENT_FAILED,Payment status is FAILED (not PAID),EXCLUDED_FROM_FACT_SALES
+4. Validate Referential Integrity,orders,ORD000734,customer_id,UNMATCHED_CUSTOMER_ID,customer_id 'C0165' not found in Customer Master,EXCLUDED_FROM_FACT_SALES
+4. Validate Business Rules,payments,ORD000742,payment_status,PAYMENT_REFUNDED,Payment status is REFUNDED (not PAID),EXCLUDED_FROM_FACT_SALES
