@@ -1,0 +1,60 @@
+=== q01.sql ===
+line_count	order_count	units	revenue
+8	6	23	1390
+
+=== q02.sql ===
+month	revenue
+2026-08	490
+2026-09	900
+
+=== q03.sql ===
+month	province	revenue
+2026-08	Bangkok	310
+2026-08	Chonburi	180
+2026-09	Bangkok	540
+2026-09	Chonburi	360
+
+=== q04.sql ===
+full_date	revenue
+2026-09-09	360
+2026-09-10	300
+2026-09-11	240
+
+=== q05.sql ===
+province	revenue
+Bangkok	540
+Chonburi	360
+
+=== q06.sql ===
+month	category	province	revenue
+2026-09	Drink	Bangkok	300
+2026-09	Drink	Chonburi	200
+
+=== q07.sql ===
+province	revenue
+Bangkok	540
+
+=== q08.sql ===
+province	aug	sep	total
+Bangkok	310	540	850
+Chonburi	180	360	540
+
+=== q09.sql ===
+month	revenue
+2026-08	490
+2026-09	900
+ALL	1390
+
+=== q10.sql ===
+revenue	orders	aov	avg_line
+1390	6	231.67	173.75
+
+=== q11.sql ===
+source	row_count	total_amount
+fact_sales (before JOIN)	8	1390
+sales (after JOIN)	8	1390
+
+=== q12.sql ===
+order_id	line_no	product_name	quantity	amount
+O1005	1	Tea	6	300
+O1006	1	Cookie	3	240

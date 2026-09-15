@@ -1,0 +1,4 @@
+=== q11.sql ===
+source	row_count	total_amount
+fact_sales (before JOIN)	8	1390
+sales (after JOIN)	8	1390

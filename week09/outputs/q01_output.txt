@@ -1,0 +1,3 @@
+=== q01.sql ===
+line_count	order_count	units	revenue
+8	6	23	1390

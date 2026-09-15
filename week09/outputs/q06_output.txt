@@ -1,0 +1,4 @@
+=== q06.sql ===
+month	category	province	revenue
+2026-09	Drink	Bangkok	300
+2026-09	Drink	Chonburi	200

@@ -1,0 +1,3 @@
+=== q10.sql ===
+revenue	orders	aov	avg_line
+1390	6	231.67	173.75

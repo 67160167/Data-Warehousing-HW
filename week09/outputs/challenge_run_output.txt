@@ -1,0 +1,45 @@
+============================================================
+Challenge A: Analysis on extended.db
+============================================================
+
+--- 1. Top 3 Stores by Total Revenue ---
+  store_name   province region  total_revenue
+      Nimman Chiang Mai  North         145280
+     Pattaya   Chonburi   East         141215
+Muang Rayong     Rayong   East         136710
+
+--- 2. Monthly AOV ---
+  month  revenue  orders  monthly_aov
+2026-08   273650     603       453.81
+2026-09   270160     586       461.02
+2026-10   264145     611       432.32
+
+--- 3. Comparison of AOV ---
+Total Revenue across period: 807,955.0 บาท
+Total Distinct Orders:       1,800.0 ออเดอร์
+Overall AOV (Revenue / Orders):       448.86 บาท/ออเดอร์
+Simple Average of Monthly AOVs:       449.05 บาท/ออเดอร์
+Note: ค่าเฉลี่ยตรงๆ (Simple Average) ของ AOV รายเดือนไม่เท่ากับ Overall AOV
+เพราะแต่ละเดือนมีจำนวนออเดอร์ (ตัวหาร/น้ำหนัก) ไม่เท่ากัน (603, 586, 611 ออเดอร์)
+AOV เป็น Non-additive metric การรวมข้ามเดือนจึงต้องคำนวณจากผลรวมยอดขายทั้งหมดหารด้วยผลรวมออเดอร์ทั้งหมด
+
+============================================================
+Challenge B: Extending warehouse.db into challenge.db
+============================================================
+Copied warehouse.db -> challenge.db
+Before INSERT: fact_sales has 8 rows, total amount = 1390 บาท
+PRAGMA foreign_key_check: PASSED (No errors)
+
+--- Integrity Check (Before vs After JOIN) ---
+                  source  row_count  order_count  total_amount
+fact_sales (before JOIN)         11            8          1900
+      sales (after JOIN)         11            8          1900
+
+--- New Pivot Table (Province x Month including 2026-10) ---
+month     2026-08  2026-09  2026-10  Total
+province                                  
+Bangkok       310      540      200   1050
+Chonburi      180      360      310    850
+Total         490      900      510   1900
+
+Exported challenge pivot table to pivot_challenge_october.csv

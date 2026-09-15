@@ -1,0 +1,4 @@
+=== q05.sql ===
+province	revenue
+Bangkok	540
+Chonburi	360

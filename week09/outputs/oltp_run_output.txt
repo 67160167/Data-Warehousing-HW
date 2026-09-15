@@ -1,0 +1,9 @@
+=== Run 1 ===
+Before: [('O1004', 'PENDING')]
+Rows updated: 1
+After: [('O1004', 'PAID')]
+
+=== Run 2 ===
+Before: [('O1004', 'PAID')]
+Rows updated: 0
+After: [('O1004', 'PAID')]
