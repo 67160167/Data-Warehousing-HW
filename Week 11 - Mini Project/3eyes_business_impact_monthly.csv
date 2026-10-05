@@ -1,0 +1,11 @@
+month,phase,production_volume,total_defects,escaped_defects,escape_rate_pct,avg_defect_ppm,customer_complaints,copq_cost_thb,inspection_speed_pcs_hr,system_status
+2026-01,Before-3Eyes,180000,3600,720,20.0%,4000,14,1440000,380,Manual 100%
+2026-02,Before-3Eyes,175000,3500,770,22.0%,4400,16,1540000,375,Manual 100%
+2026-03,Before-3Eyes,190000,3800,836,22.0%,4400,18,1672000,365,Manual 100%
+2026-04,Before-3Eyes,185000,3700,888,24.0%,4800,19,1776000,360,Manual 100%
+2026-05,Before-3Eyes,195000,3900,975,25.0%,5000,21,1950000,350,Manual 100%
+2026-06,Before-3Eyes,200000,4000,1040,26.0%,5200,22,2080000,345,Manual 100%
+2026-07,Pilot-3Eyes,205000,4100,410,10.0%,2000,8,820000,420,Pilot 3Lines
+2026-08,Pilot-3Eyes,210000,4200,252,6.0%,1200,5,504000,450,Pilot 5Lines
+2026-09,Full-Adoption,220000,4400,132,3.0%,600,2,264000,510,Full Rollout
+2026-10,Full-Adoption,225000,4500,90,2.0%,400,1,180000,530,Full Rollout

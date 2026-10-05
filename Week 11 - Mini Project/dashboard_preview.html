@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3Eyes QA Storytelling Dashboard — Business Idea Creation</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', 'Plus Jakarta Sans', sans-serif;
+      background: #0B0F19;
+      color: #E2E8F0;
+    }
+    .font-mono-num {
+      font-family: 'Plus Jakarta Sans', monospace;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+    }
+    .glass-card:hover {
+      border-color: rgba(59, 130, 246, 0.35);
+      transition: all 0.3s ease;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px rgba(6, 182, 212, 0.15);
+    }
+    .badge-act {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 space-y-8 max-w-7xl mx-auto">
+
+  <!-- HEADER / EXECUTIVE STORY BANNER -->
+  <header class="glass-card p-6 md:p-8 relative overflow-hidden glow-cyan">
+    <div class="absolute -right-16 -top-16 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <span class="badge-act bg-blue-500/20 text-blue-400 border border-blue-500/30">Business Idea Creation • QA Role</span>
+          <span class="text-xs text-gray-400">IATF 16949 Fastener Quality Transformation</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white flex items-center gap-3">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-300">3Eyes</span>
+          QA Storytelling Dashboard
+        </h1>
+        <p class="text-gray-400 text-sm md:text-base mt-1 max-w-3xl">
+          เรื่องเล่าจากสายตา QA: จากวิกฤตของเสียหลุด 26% สู่โซลูชัน <strong>"ตาที่ 3 แบบสวมใส่ (Wearable AI Anomaly Detection)"</strong> 
+          ช่วยพนักงานคัดกรองน็อตยานยนต์ ลดเคลม 90% และประหยัดต้นทุนคุณภาพปีละ 18.2 ล้านบาท
+        </p>
+      </div>
+
+      <!-- Quick Summary Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 bg-gray-900/80 p-4 rounded-xl border border-gray-800">
+        <div class="text-center px-2">
+          <div class="text-xs text-gray-400">Escaped Defect</div>
+          <div class="text-xl md:text-2xl font-bold text-red-400 font-mono-num">26% &rarr; 2%</div>
+          <div class="text-[11px] text-emerald-400">ลดลง 92.3%</div>
+        </div>
+        <div class="text-center px-2 border-l border-gray-800">
+          <div class="text-xs text-gray-400">COPQ Saving</div>
+          <div class="text-xl md:text-2xl font-bold text-emerald-400 font-mono-num">฿1.52M<span class="text-xs font-normal">/mo</span></div>
+          <div class="text-[11px] text-emerald-400">คืนทุน 3.8 เดือน</div>
+        </div>
+        <div class="text-center px-2 border-l border-gray-800 col-span-2 sm:col-span-1">
+          <div class="text-xs text-gray-400">IATF Traceability</div>
+          <div class="text-xl md:text-2xl font-bold text-cyan-300 font-mono-num">100%</div>
+          <div class="text-[11px] text-cyan-400">ภาพตรวจย้อนหลังได้</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STORY ARC NAVIGATION BAR -->
+  <nav class="flex flex-wrap gap-2 text-xs md:text-sm font-semibold text-gray-400">
+    <div class="flex items-center gap-2 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800 text-rose-400">
+      <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+      Act 1: วิกฤตหน้างาน (The Pain)
+    </div>
+    <div class="flex items-center gap-2 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800 text-amber-400">
+      <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+      Act 2: ผ่าต้นตอตำหนิ 8 คลาส (The Diagnosis)
+    </div>
+    <div class="flex items-center gap-2 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800 text-cyan-400">
+      <span class="w-2 h-2 rounded-full bg-cyan-500"></span>
+      Act 3: นวัตกรรม "ตาที่ 3" (The Solution)
+    </div>
+    <div class="flex items-center gap-2 bg-gray-900/60 px-4 py-2 rounded-lg border border-gray-800 text-emerald-400">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      Act 4: มูลค่าธุรกิจ & ROI (The Impact)
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- ACT 1: THE CRISIS (ปัญหาหน้างาน QA & ความล้า) -->
+  <!-- ========================================== -->
+  <section class="space-y-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="badge-act bg-rose-500/20 text-rose-400 border border-rose-500/30">Act 1 • วิกฤตหน้างาน</span>
+        <h2 class="text-xl font-bold text-white">มนุษย์ไม่ใช่หุ่นยนต์: ปัญหาความล้าและการหลุดรอดของตำหนิ (Manual Fatigue)</h2>
+      </div>
+      <span class="text-xs text-gray-400 hidden sm:inline">อ้างอิง: Sandia National Labs Benchmark (Human Visual Inspection)</span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Chart: Fatigue vs Escaped Defects -->
+      <div class="glass-card p-5 lg:col-span-2 flex flex-col justify-between">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <h3 class="font-bold text-white text-base">เส้นโค้งความเหนื่อยล้าของ QC กับอัตราของเสียหลุด (Escape Rate vs Shift Hours)</h3>
+            <p class="text-xs text-gray-400">ยิ่งตรวจนานเกิน 4 ชม. อัตราหลุดรอดของน็อตมีตำหนิพุ่งขึ้นแตะ 38%</p>
+          </div>
+          <span class="text-xs bg-rose-500/10 text-rose-300 px-2.5 py-1 rounded border border-rose-500/20 font-mono-num">Crisis Point @ Hr 6+</span>
+        </div>
+        <div class="h-64 relative">
+          <canvas id="fatigueChart"></canvas>
+        </div>
+        <div class="mt-4 pt-3 border-t border-gray-800 text-xs text-gray-400 flex items-center justify-between">
+          <span>💡 <strong>Insight สำหรับ QA:</strong> พนักงานเริ่มล้าตั้งแต่ชม.ที่ 3 ส่งผลให้ของเสียหลุดถึงลูกค้า 720-1,040 ตัว/เดือน</span>
+          <span class="text-rose-400 font-bold">ความสูญเสียเฉลี่ย 1.8 ล้านบาท/เดือน</span>
+        </div>
+      </div>
+
+      <!-- Human vs AI Bottleneck Breakdown -->
+      <div class="glass-card p-5 flex flex-col justify-between space-y-4">
+        <h3 class="font-bold text-white text-base">ทำไม Machine Vision ทั่วไปแก้ไม่ได้?</h3>
+        
+        <div class="space-y-3 text-xs">
+          <div class="p-3 bg-red-950/30 border border-red-800/40 rounded-lg">
+            <div class="font-semibold text-red-400 mb-1">❌ ข้อจำกัดของคน (Manual QC)</div>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>ตรวจน็อต 30,000 ตัว/วัน สายตาล้าหลังจาก 45 นาที</li>
+              <li>การตัดสินใจไม่คงเส้นคงวา (Subjective Bias)</li>
+              <li>ไม่มีภาพถ่ายบันทึกย้อนหลังเมื่อลูกค้าเคลม</li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-amber-950/30 border border-amber-800/40 rounded-lg">
+            <div class="font-semibold text-amber-400 mb-1">⚠️ ปัญหาระบบกล้องฟิกซ์ (Fixed Machine Vision)</div>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>ค่าติดตั้ง 2-5 ล้านบาทต่อไลน์ (SME คืนทุนยาก)</li>
+              <li>ชิ้นงานหลายรุ่นต้องจูนแสงและมุมกล้องใหม่ตลอดเวลา</li>
+              <li>ต้องสะสมภาพ Defect นับหมื่นรูปเพื่อเทรนโมเดล</li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-blue-950/30 border border-blue-800/40 rounded-lg">
+            <div class="font-semibold text-cyan-300 mb-1">✨ Business Opportunity ของ 3Eyes</div>
+            <p class="text-gray-300">
+              สร้าง <strong>"ตาที่ 3 แบบสวมใส่"</strong> เทรนจาก <em>"น็อตดีอย่างเดียว"</em> (Anomaly Detection) เริ่มต้นได้ทันทีโดยไม่ต้องรองบหลายล้าน
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- ACT 2: DEFECT DIAGNOSIS (เจาะลึก 8 ตำหนิ) -->
+  <!-- ========================================== -->
+  <section class="space-y-4">
+    <div class="flex items-center gap-2">
+      <span class="badge-act bg-amber-500/20 text-amber-400 border border-amber-500/30">Act 2 • เจาะลึกตำหนิ</span>
+      <h2 class="text-xl font-bold text-white">Anatomy of Flange Bolt Defects: 8 ตำแหน่งตำหนิและผลกระทบ</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Defect Card 1 -->
+      <div class="glass-card p-4 border-l-4 border-rose-500">
+        <div class="flex justify-between items-start">
+          <span class="text-xs font-bold text-rose-400">Critical High Risk</span>
+          <span class="text-xs bg-gray-800 text-gray-300 px-2 py-0.5 rounded font-mono-num">34% of Claims</span>
+        </div>
+        <h4 class="font-bold text-white mt-1 text-sm">1. บ่ากระแทก (Flange Dent)</h4>
+        <p class="text-xs text-gray-400 mt-1">บริเวณหน้าแปลนใต้หัว เกิดรอยยุบ ทำให้น้ำมันเครื่องซึมรั่วหลังประกอบ</p>
+        <div class="mt-3 text-[11px] text-gray-400 flex justify-between">
+          <span>ความยากในการมอง: <strong>ปานกลาง</strong></span>
+          <span class="text-emerald-400">3Eyes แม่น 98%</span>
+        </div>
+      </div>
+
+      <!-- Defect Card 2 -->
+      <div class="glass-card p-4 border-l-4 border-rose-500">
+        <div class="flex justify-between items-start">
+          <span class="text-xs font-bold text-rose-400">Critical High Risk</span>
+          <span class="text-xs bg-gray-800 text-gray-300 px-2 py-0.5 rounded font-mono-num">28% of Claims</span>
+        </div>
+        <h4 class="font-bold text-white mt-1 text-sm">2. เกลียวรูด/กระแทก (Thread Defect)</h4>
+        <p class="text-xs text-gray-400 mt-1">เกลียวเสียรูป ขันไม่ลงหรือปีนเกลียวในสายการประกอบเครื่องยนต์ของลูกค้า</p>
+        <div class="mt-3 text-[11px] text-gray-400 flex justify-between">
+          <span>ความยากในการมอง: <strong>ยากมาก (มุมเล็ก)</strong></span>
+          <span class="text-emerald-400">3Eyes แม่น 95%</span>
+        </div>
+      </div>
+
+      <!-- Defect Card 3 -->
+      <div class="glass-card p-4 border-l-4 border-amber-500">
+        <div class="flex justify-between items-start">
+          <span class="text-xs font-bold text-amber-400">Medium Risk</span>
+          <span class="text-xs bg-gray-800 text-gray-300 px-2 py-0.5 rounded font-mono-num">18% of Claims</span>
+        </div>
+        <h4 class="font-bold text-white mt-1 text-sm">3. แชฟเฟอร์กระแทก (Chamfer Dent)</h4>
+        <p class="text-xs text-gray-400 mt-1">มุมลบคมปลายเกลียวบุบ ช่างประกอบสวมน็อตเข้าช่องเกลียวไม่ได้</p>
+        <div class="mt-3 text-[11px] text-gray-400 flex justify-between">
+          <span>ความยากในการมอง: <strong>ปานกลาง</strong></span>
+          <span class="text-emerald-400">3Eyes แม่น 94%</span>
+        </div>
+      </div>
+
+      <!-- Defect Card 4 -->
+      <div class="glass-card p-4 border-l-4 border-cyan-500">
+        <div class="flex justify-between items-start">
+          <span class="text-xs font-bold text-cyan-400">Appearance / Quality</span>
+          <span class="text-xs bg-gray-800 text-gray-300 px-2 py-0.5 rounded font-mono-num">20% of Claims</span>
+        </div>
+        <h4 class="font-bold text-white mt-1 text-sm">4. สนิม & เหลี่ยมเสีย (Rust & Hex)</h4>
+        <p class="text-xs text-gray-400 mt-1">ผิวชุบสังกะสีไม่ทั่วถึง หรือหกเหลี่ยมเบี้ยว ประแจรูดเวลาขัน</p>
+        <div class="mt-3 text-[11px] text-gray-400 flex justify-between">
+          <span>ความยากในการมอง: <strong>ง่าย-ปานกลาง</strong></span>
+          <span class="text-emerald-400">3Eyes แม่น 99%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Defect Frequency & Escape Rate Matrix Chart -->
+    <div class="glass-card p-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+        <div>
+          <h3 class="font-bold text-white text-base">สัดส่วนของเสียและการตรวจจับได้ (Defect Volume vs Detection Rate Before/After)</h3>
+          <p class="text-xs text-gray-400">เปรียบเทียบความสามารถในการจับตำหนิแต่ละประเภท: ตาเปล่าคน vs 3Eyes Copilot</p>
+        </div>
+        <div class="flex items-center gap-4 text-xs">
+          <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-red-500"></span> ตรวจด้วยตาคน (Manual)</div>
+          <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-emerald-400"></span> ตรวจร่วม 3Eyes AI</div>
+        </div>
+      </div>
+      <div class="h-64 relative">
+        <canvas id="defectDistributionChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- ACT 3: THE INNOVATION (นวัตกรรม 3Eyes Copilot) -->
+  <!-- ========================================== -->
+  <section class="space-y-4">
+    <div class="flex items-center gap-2">
+      <span class="badge-act bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">Act 3 • นวัตกรรมทางธุรกิจ</span>
+      <h2 class="text-xl font-bold text-white">3Eyes: Human-AI Copilot ในรูปแบบ Wearable Anomaly Detection</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Feature Highlight -->
+      <div class="glass-card p-5 space-y-4">
+        <h3 class="font-bold text-white text-base">ทำไม Anomaly Detection คือ Game Changer?</h3>
+        
+        <div class="p-3 bg-gray-900/80 rounded-xl border border-gray-800">
+          <div class="text-xs font-semibold text-cyan-400 mb-1">1. ใช้แต่น็อตดีในการเรียนรู้ (Zero Defect Need)</div>
+          <p class="text-xs text-gray-300">
+            โรงงานผลิตของดีวันละหลายหมื่นตัว ขอ 200 ตัวมาเทรนได้ทันที ต่างจาก AI แบบเดิมที่ต้องรอน็อตเสียสะสมเป็นเดือน
+          </p>
+        </div>
+
+        <div class="p-3 bg-gray-900/80 rounded-xl border border-gray-800">
+          <div class="text-xs font-semibold text-cyan-400 mb-1">2. ตรวจจับตำหนิที่ไม่เคยเห็นมาก่อนได้ (Zero-day Defects)</div>
+          <p class="text-xs text-gray-300">
+            อะไรก็ตามที่ "ผิวผิดไปจากของดีปกติ" โมเดลจะส่งสัญญาณเตือน (Heatmap) ให้คนเพ่งซ้ำทันที
+          </p>
+        </div>
+
+        <div class="p-3 bg-gray-900/80 rounded-xl border border-gray-800">
+          <div class="text-xs font-semibold text-cyan-400 mb-1">3. Human-in-the-Loop Architecture</div>
+          <p class="text-xs text-gray-300">
+            AI ไม่ได้มาแทนที่พนักงาน แต่เป็น <strong>"ตาที่ 3"</strong> คอยสะกิดจุดต้องสงสัย ทำให้สปีดการตรวจเร็วขึ้น 40% และไม่ล้า
+          </p>
+        </div>
+      </div>
+
+      <!-- Human vs AI Confusion Matrix / Decision Flow -->
+      <div class="glass-card p-5 lg:col-span-2 flex flex-col justify-between">
+        <div>
+          <h3 class="font-bold text-white text-base">ผลการทดลองจริงในสายการผลิต (Real Pilot Benchmark)</h3>
+          <p class="text-xs text-gray-400">ทดสอบบนน็อตตัวอย่างและสายผลิตจริง 225,000 ตัว</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-4">
+          <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-xs text-gray-400">Defect Catch Rate</div>
+            <div class="text-2xl font-bold text-emerald-400 font-mono-num">98.0%</div>
+            <div class="text-[11px] text-gray-400">จากเดิมคนตรวจได้ 74%</div>
+          </div>
+          <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-xs text-gray-400">False Alarm Rate</div>
+            <div class="text-2xl font-bold text-cyan-300 font-mono-num">2.4%</div>
+            <div class="text-[11px] text-gray-400">อยู่ในเกณฑ์ที่คนกรองซ้ำได้</div>
+          </div>
+          <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-xs text-gray-400">Inspection Speed</div>
+            <div class="text-2xl font-bold text-blue-400 font-mono-num">530<span class="text-xs font-normal"> ชิ้น/ชม.</span></div>
+            <div class="text-[11px] text-emerald-400">+53.6% เร็วขึ้น</div>
+          </div>
+          <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-xs text-gray-400">Customer PPM</div>
+            <div class="text-2xl font-bold text-purple-400 font-mono-num">400</div>
+            <div class="text-[11px] text-purple-300">จากเดิม 5,200 PPM</div>
+          </div>
+        </div>
+
+        <div class="h-48 relative">
+          <canvas id="monthlyTrendChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- ACT 4: BUSINESS VALUE & ROI (ผลลัพธ์ธุรกิจ) -->
+  <!-- ========================================== -->
+  <section class="space-y-4">
+    <div class="flex items-center gap-2">
+      <span class="badge-act bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Act 4 • ผลลัพธ์เชิงธุรกิจ</span>
+      <h2 class="text-xl font-bold text-white">Business Impact: ลดต้นทุน COPQ & สร้างมูลค่าเพิ่มทางธุรกิจ</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Cost Comparison Before vs After -->
+      <div class="glass-card p-5 flex flex-col justify-between">
+        <div>
+          <h3 class="font-bold text-white text-base">Cost of Poor Quality (COPQ) ต่อเดือน</h3>
+          <p class="text-xs text-gray-400">ค่าเคลมน็อตเสีย, ค่าหยุดไลน์ลูกค้า, ค่าขนส่งชดเชย</p>
+        </div>
+        <div class="h-60 relative my-2">
+          <canvas id="copqChart"></canvas>
+        </div>
+        <div class="p-3 bg-emerald-950/30 border border-emerald-800/40 rounded-lg text-xs text-emerald-300">
+          💰 <strong>ประหยัดเงินได้:</strong> ฿1,900,000 / เดือน (ลดลง 91.3%)
+        </div>
+      </div>
+
+      <!-- ROI & Financial Payback -->
+      <div class="glass-card p-5 flex flex-col justify-between">
+        <div>
+          <h3 class="font-bold text-white text-base">โมเดลการลงทุนและการคืนทุน (Payback Period)</h3>
+          <p class="text-xs text-gray-400">งบลงทุนพัฒนาฮาร์ดแวร์ + โมเดล 3Eyes รวม 5.8 ล้านบาท</p>
+        </div>
+
+        <div class="space-y-3 my-2 text-xs">
+          <div class="flex justify-between p-2 bg-gray-900 rounded border border-gray-800">
+            <span class="text-gray-400">เงินลงทุนเริ่มต้น (Initial CapEx)</span>
+            <span class="font-mono-num font-bold text-white">฿5,800,000</span>
+          </div>
+          <div class="flex justify-between p-2 bg-gray-900 rounded border border-gray-800">
+            <span class="text-gray-400">ต้นทุนคุณภาพลดลง (Monthly COPQ Saved)</span>
+            <span class="font-mono-num font-bold text-emerald-400">+฿1,520,000 / ด.</span>
+          </div>
+          <div class="flex justify-between p-2 bg-gray-900 rounded border border-gray-800">
+            <span class="text-gray-400">ระยะเวลาคืนทุน (Payback Period)</span>
+            <span class="font-mono-num font-bold text-cyan-300">3.8 เดือน</span>
+          </div>
+          <div class="flex justify-between p-2 bg-gray-900 rounded border border-gray-800">
+            <span class="text-gray-400">ROI 3 ปีแรก (Net 3-Yr ROI)</span>
+            <span class="font-mono-num font-bold text-purple-400">790%</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-blue-950/30 border border-blue-800/40 rounded-lg text-xs text-blue-300">
+          📈 <strong>โอกาสขยายตลาด:</strong> ขยายผลสู่ 45 โรงงาน SME ในเครือข่ายยานยนต์ไทย
+        </div>
+      </div>
+
+      <!-- IATF Compliance & Strategic Moat -->
+      <div class="glass-card p-5 flex flex-col justify-between">
+        <div>
+          <h3 class="font-bold text-white text-base">คุณค่าเชิงกลยุทธ์ตามมาตรฐาน IATF 16949</h3>
+          <p class="text-xs text-gray-400">ยกระดับจากโรงงานผู้ผลิตทั่วไปสู่ Tier-1 Ready Supplier</p>
+        </div>
+
+        <div class="space-y-3 my-2 text-xs">
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+            <div>
+              <div class="font-semibold text-white">100% Digital Traceability</div>
+              <div class="text-gray-400">ทุกชิ้นมีภาพถ่ายและบันทึก Anomaly Score สอบกลับได้ 5 ปี</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+            <div>
+              <div class="font-semibold text-white">Zero Defect Escape Assurance</div>
+              <div class="text-gray-400">สร้างความเชื่อมั่นให้ค่ายรถยนต์ ลดการโดน Audit ซ้ำซ้อน</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+            <div>
+              <div class="font-semibold text-white">Worker Ergonomics & Satisfaction</div>
+              <div class="text-gray-400">ลดอาการปวดตาและความเครียดของพนักงาน QC เพิ่ม Retention Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 bg-purple-950/30 border border-purple-800/40 rounded-lg text-xs text-purple-300">
+          🎯 <strong>เป้าหมายต่อไป:</strong> สเกลเป็น SaaS + Hardware Subscription Model
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-xs text-gray-500 py-6 border-t border-gray-800">
+    3Eyes Quality Assurance Storytelling Dashboard • Business Idea Creation Presentation Project • Designed with Chart.js & Tailwind CSS
+  </footer>
+
+  <!-- SCRIPT FOR CHARTS -->
+  <script>
+    // 1. Fatigue Chart (Act 1)
+    const ctxFatigue = document.getElementById('fatigueChart').getContext('2d');
+    new Chart(ctxFatigue, {
+      type: 'line',
+      data: {
+        labels: ['ชม. 1', 'ชม. 2', 'ชม. 3', 'ชม. 4', 'ชม. 5', 'ชม. 6', 'ชม. 7', 'ชม. 8 (OT)'],
+        datasets: [
+          {
+            label: 'Escaped Defect Rate ของคน (%)',
+            data: [6.2, 8.5, 12.0, 18.5, 24.0, 31.5, 36.8, 38.5],
+            borderColor: '#F43F5E',
+            backgroundColor: 'rgba(244, 63, 94, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.35,
+            pointBackgroundColor: '#F43F5E',
+            pointRadius: 4
+          },
+          {
+            label: 'ร่วมตรวจด้วย 3Eyes Copilot (%)',
+            data: [1.8, 1.9, 2.1, 2.0, 2.3, 2.5, 2.4, 2.6],
+            borderColor: '#2DD4BF',
+            backgroundColor: 'transparent',
+            borderWidth: 3,
+            borderDash: [5, 5],
+            tension: 0.2,
+            pointBackgroundColor: '#2DD4BF',
+            pointRadius: 4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: { color: '#94A3B8', font: { family: 'Sarabun', size: 12 } }
+          }
+        },
+        scales: {
+          y: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#94A3B8', callback: val => val + '%' }
+          },
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#94A3B8' }
+          }
+        }
+      }
+    });
+
+    // 2. Defect Breakdown Chart (Act 2)
+    const ctxDefect = document.getElementById('defectDistributionChart').getContext('2d');
+    new Chart(ctxDefect, {
+      type: 'bar',
+      data: {
+        labels: ['บ่ากระแทก', 'เกลียวกระแทก', 'เกลียวรูด', 'แชฟเฟอร์กระแทก', 'เหลี่ยมเป็นรอย', 'เหลี่ยมเสีย', 'สนิม'],
+        datasets: [
+          {
+            label: 'ตรวจพบด้วยตาคน (%)',
+            data: [72, 65, 61, 70, 85, 82, 88],
+            backgroundColor: 'rgba(239, 68, 68, 0.7)',
+            borderRadius: 6
+          },
+          {
+            label: 'ตรวจพบร่วม 3Eyes AI (%)',
+            data: [98, 95, 94, 95, 99, 98, 99],
+            backgroundColor: 'rgba(52, 211, 153, 0.85)',
+            borderRadius: 6
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: { color: '#94A3B8', font: { family: 'Sarabun', size: 12 } }
+          }
+        },
+        scales: {
+          y: {
+            max: 100,
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#94A3B8', callback: val => val + '%' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { color: '#94A3B8', font: { family: 'Sarabun', size: 11 } }
+          }
+        }
+      }
+    });
+
+    // 3. Monthly Trend Chart (Act 3)
+    const ctxMonthly = document.getElementById('monthlyTrendChart').getContext('2d');
+    new Chart(ctxMonthly, {
+      type: 'line',
+      data: {
+        labels: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย. (Before)', 'ก.ค. (Pilot)', 'ส.ค.', 'ก.ย. (Full)', 'ต.ค.'],
+        datasets: [
+          {
+            label: 'Defect PPM (Parts Per Million)',
+            data: [4000, 4400, 4400, 4800, 5000, 5200, 2000, 1200, 600, 400],
+            borderColor: '#A855F7',
+            backgroundColor: 'rgba(168, 85, 247, 0.1)',
+            fill: true,
+            yAxisID: 'y',
+            tension: 0.3
+          },
+          {
+            label: 'ความเร็วตรวจ (ชิ้น/ชม.)',
+            data: [380, 375, 365, 360, 350, 345, 420, 450, 510, 530],
+            borderColor: '#38BDF8',
+            borderDash: [4, 4],
+            yAxisID: 'y1',
+            tension: 0.3
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { labels: { color: '#94A3B8', font: { family: 'Sarabun', size: 11 } } }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            position: 'left',
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#C084FC' }
+          },
+          y1: {
+            type: 'linear',
+            position: 'right',
+            grid: { display: false },
+            ticks: { color: '#38BDF8' }
+          },
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#94A3B8' }
+          }
+        }
+      }
+    });
+
+    // 4. COPQ Cost Comparison (Act 4)
+    const ctxCOPQ = document.getElementById('copqChart').getContext('2d');
+    new Chart(ctxCOPQ, {
+      type: 'bar',
+      data: {
+        labels: ['ก่อนเริ่มระบบ (Manual)', 'หลังใช้ 3Eyes Copilot'],
+        datasets: [
+          {
+            label: 'ค่าเคลมและของเสียต่อเดือน (บาท)',
+            data: [2080000, 180000],
+            backgroundColor: ['#F43F5E', '#10B981'],
+            borderRadius: 8
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: {
+              color: '#94A3B8',
+              callback: val => '฿' + (val / 1000).toLocaleString() + 'k'
+            }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { color: '#E2E8F0', font: { family: 'Sarabun', weight: 'bold' } }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

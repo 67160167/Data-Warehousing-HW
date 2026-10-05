@@ -1,0 +1,21 @@
+inspection_id,timestamp,shift,inspector_id,hours_on_shift,bolt_id,defect_actual_type,is_defective_ground_truth,human_result,ai_3eyes_result,final_decision,inspection_time_sec,customer_escaped,copq_cost_thb
+INS-20261001-001,2026-10-01 08:15:00,Morning,QC-01,0.5,B01-Good,none,0,PASS,PASS,PASS,3.2,0,0
+INS-20261001-002,2026-10-01 08:42:00,Morning,QC-01,1.0,B02-FlangeDent,บ่ากระแทก,1,FAIL,FAIL,FAIL,4.1,0,0
+INS-20261001-003,2026-10-01 09:30:00,Morning,QC-02,1.5,B03-ThreadDent,เกลียวกระแทก,1,FAIL,FAIL,FAIL,3.8,0,0
+INS-20261001-004,2026-10-01 10:15:00,Morning,QC-01,2.5,B04-Good,none,0,PASS,PASS,PASS,2.9,0,0
+INS-20261001-005,2026-10-01 11:20:00,Morning,QC-02,3.5,B05-StrippedThread,เกลียวรูด,1,PASS,FAIL,FAIL,3.0,0,0
+INS-20261001-006,2026-10-01 11:50:00,Morning,QC-01,4.0,B06-Rust,สนิม,1,PASS,FAIL,FAIL,2.5,0,0
+INS-20261001-007,2026-10-01 13:10:00,Morning,QC-02,4.5,B07-HexScratch,เหลี่ยมเป็นรอย,1,FAIL,FAIL,FAIL,3.5,0,0
+INS-20261001-008,2026-10-01 14:05:00,Morning,QC-01,5.5,B08-ChamferDent,แชฟเฟอร์กระเเทก,1,PASS,FAIL,FAIL,2.7,0,0
+INS-20261001-009,2026-10-01 14:45:00,Morning,QC-02,6.0,B09-HexDeformed,เหลี่ยมเสีย,1,PASS,FAIL,FAIL,2.4,0,0
+INS-20261001-010,2026-10-01 15:30:00,Morning,QC-01,7.0,B10-FlangeDent,บ่ากระแทก,1,PASS,FAIL,FAIL,2.2,0,0
+INS-20261001-011,2026-10-01 16:15:00,Evening,QC-03,0.5,B11-Good,none,0,PASS,PASS,PASS,3.4,0,0
+INS-20261001-012,2026-10-01 17:00:00,Evening,QC-03,1.2,B12-Rust,สนิม,1,FAIL,FAIL,FAIL,4.0,0,0
+INS-20261001-013,2026-10-01 18:30:00,Evening,QC-04,2.5,B13-Good,none,0,PASS,PASS,PASS,3.1,0,0
+INS-20261001-014,2026-10-01 19:40:00,Evening,QC-03,3.8,B14-ThreadDent,เกลียวกระแทก,1,PASS,FAIL,FAIL,2.8,0,0
+INS-20261001-015,2026-10-01 20:50:00,Evening,QC-04,5.0,B15-FlangeDent,บ่ากระแทก,1,PASS,FAIL,FAIL,2.3,0,0
+INS-20261001-016,2026-10-01 21:30:00,Evening,QC-03,5.5,B16-StrippedThread,เกลียวรูด,1,PASS,FAIL,FAIL,2.1,0,0
+INS-20261001-017,2026-10-01 22:15:00,Evening,QC-04,6.5,B17-Good,none,0,PASS,FAIL,FAIL,4.2,0,0
+INS-20261001-018,2026-10-01 23:00:00,Evening,QC-03,7.2,B18-ChamferDent,แชฟเฟอร์กระเเทก,1,PASS,FAIL,FAIL,2.0,0,0
+INS-20261001-019,2026-10-02 00:10:00,Night,QC-05,0.5,B19-Good,none,0,PASS,PASS,PASS,3.3,0,0
+INS-20261001-020,2026-10-02 01:20:00,Night,QC-05,1.5,B20-HexDeformed,เหลี่ยมเสีย,1,FAIL,FAIL,FAIL,3.9,0,0
